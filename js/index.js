@@ -113,19 +113,19 @@ function initColorChain4() { 	//4 sym look like 3, whith creation of an envelope
 }
 function initColorChain5() { 	//5 highway around 10000 step. Idem 1.
 	var cc;
-	Driver.colorChain = { color : "white", 	action :toLeft, next : null};
+	Driver.colorChain ={color : "white", 			action :toLeft, next : null};
 	cc = Driver.colorChain;
 	//
-	cc.next = { color : "red", 				action :toRight, next : null};
+	cc.next = { 		color : "red", 				action :toRight, next : null};
 	cc=cc.next;
-	cc.next=  { color : "black", 			action :toLeft, next : null};
+	cc.next=  { 		color : "black", 			action :toLeft, next : null};
 	cc=cc.next;
-	cc.next = { color : "green", 			action :toRight, next : null};
+	cc.next = { 		color : "green", 			action :toRight, next : null};
 	cc=cc.next;
-	cc.next=  { color : "cyan", 			action :toLeft, next : null};
+	cc.next=  { 		color : "cyan", 			action :toLeft, next : null};
 	cc=cc.next;
 	//
-	cc.next = { color : "violet", 			action :toRight, next : Driver.colorChain};		
+	cc.next = { 		color : "violet", 			action :toRight, next : Driver.colorChain};		
 }
 function initColorChain6() { 	//6 chaos no highway until 2000000 (and maybe infinitely)
 	var cc;
